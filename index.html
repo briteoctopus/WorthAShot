@@ -7,11 +7,10 @@
     <title>Home | Worth A Shot</title>
 
     <!--favicon start-->
-    
+
     <!--favicon end-->
 
     <!--google fonts below here -->
-    
 
     <!--stylesheets below here-->
     <link type="text/CSS" rel="stylesheet" href="normalize.css" />
@@ -19,33 +18,73 @@
   </head>
 
   <body>
-    <header>
-      Worth A Shot
-    </header>
+    <header>Worth A Shot</header>
 
-    <nav>
-      Links go here dude
-    </nav>
+    <nav>Links go here dude</nav>
 
     <main>
       <div id="recipe">
         <h1 id="recipeName"><!--Drink name will show up here on click!--></h1>
-        <img id="drinkImage" src=""> <!--GET A MYSTERY ICON OR SOMETHING ???-->
-        <br>
+        <img id="drinkImage" src="" />
+        <!--GET A MYSTERY ICON OR SOMETHING ???-->
+        <br />
         <h2 id="title"></h2>
+
+        <!--set css so that these two uls are right next to each other? idk how else to do it-->
+        <ul id="amounts"></ul>
+
         <ul id="ingredientsList"></ul>
-        <p id=instructions></p>
- 
-      </div> 
-     <button onclick="getRandomDrink()">Random Drink</button>
+
+        <p id="instructions"></p>
+      </div>
+      <button onclick="getRandomDrink()">Random Drink</button>
     </main>
 
     <aside>
       Maybe this is where the converter tool goes? or maybe it'll be on a different page idk
+
+      <form>
+        <input name="amount1" type="number" size="10" min="0">
+        <!-- <label for="measurement">Convert from: </label> -->
+        <select id="select1" name="convertFrom">
+          <option>Choose one</option>
+          <option value="teaspoon">Teaspoon (tsp)</option>
+          <option value="tablespoon">Tablespoon (Tbsp)</option>
+          <option value="ounces">US ounce (oz)</option>
+          <option value="jigger">Jigger</option>
+          <option value="cup">Cup</option>
+          <option value="pint">US Pint (pt)</option>
+          <option value="quart">US Quart (qt)</option>
+          <option value="gallon">US Gallon (gal)</option>
+          <option value="liter">Liter</option>
+          <option value="milliliter">Milliliter (ml)</option>
+        </select> 
+        
+        <input name="amount2" type="number" size="10" min="0">
+        <!-- <label>To:</label> -->
+        <select name="convertTo" id="select2">
+            <option>Choose one</option>
+            <option value="teaspoon">Teaspoon (tsp)</option>
+            <option value="tablespoon">Tablespoon (Tbsp)</option>
+            <option value="ounces">US ounce (oz)</option>
+            <option value="jigger">Jigger</option>
+            <option value="cup">Cup</option>
+            <option value="pint">US Pint (pt)</option>
+            <option value="quart">US Quart (qt)</option>
+            <option value="gallon">US Gallon (gal)</option>
+            <option value="liter">Liter</option>
+            <option value="milliliter">Milliliter (ml)</option>
+        </select>
+
+      </form>
+
+      <p>
+        Info on what various terms mean (splash, dash, part, float, etc.)
+      </p>
     </aside>
 
     <footer>
-      
+
     </footer>
 
     <script src="worthashot.js"></script>
