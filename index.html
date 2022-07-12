@@ -41,45 +41,41 @@
     </main>
 
     <aside>
-      Maybe this is where the converter tool goes? or maybe it'll be on a different page idk
 
       <form>
-        <input name="amount1" type="number" size="10" min="0">
-        <!-- <label for="measurement">Convert from: </label> -->
-        <select id="select1" name="convertFrom">
+        <label for="measurement">Convert: </label>
+        <input id="input" type="number" size="15" min="0" placeholder="Input" onkeyup="converter()">
+        <select id="inputType">
           <option>Choose one</option>
           <option value="teaspoon">Teaspoon (tsp)</option>
           <option value="tablespoon">Tablespoon (Tbsp)</option>
           <option value="ounces">US ounce (oz)</option>
-          <option value="jigger">Jigger</option>
           <option value="cup">Cup</option>
-          <option value="pint">US Pint (pt)</option>
-          <option value="quart">US Quart (qt)</option>
-          <option value="gallon">US Gallon (gal)</option>
           <option value="liter">Liter</option>
+          <option value="centiliter">Centiliter (cl)</option>
           <option value="milliliter">Milliliter (ml)</option>
         </select> 
         
-        <input name="amount2" type="number" size="10" min="0">
-        <!-- <label>To:</label> -->
-        <select name="convertTo" id="select2">
+        <label>To:</label>
+        <select id="outputType">
             <option>Choose one</option>
             <option value="teaspoon">Teaspoon (tsp)</option>
             <option value="tablespoon">Tablespoon (Tbsp)</option>
             <option value="ounces">US ounce (oz)</option>
-            <option value="jigger">Jigger</option>
             <option value="cup">Cup</option>
-            <option value="pint">US Pint (pt)</option>
-            <option value="quart">US Quart (qt)</option>
-            <option value="gallon">US Gallon (gal)</option>
             <option value="liter">Liter</option>
+            <option value="centiliter">Centiliter (cl)</option>
             <option value="milliliter">Milliliter (ml)</option>
         </select>
+
+        <br>
+        <input id="output" type="text" size="15" placeholder="Result" readonly>
 
       </form>
 
       <p>
         Info on what various terms mean (splash, dash, part, float, etc.)
+        give definitions/equivalent measurements or something idk
       </p>
     </aside>
 
