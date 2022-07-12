@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Home | Worth A Shot</title>
+
+    <!--favicon start-->
+
+    <!--favicon end-->
+
+    <!--google fonts below here -->
+
+    <!--stylesheets below here-->
+    <link type="text/CSS" rel="stylesheet" href="normalize.css" />
+    <link type="text/CSS" rel="stylesheet" href="worthashot.css" />
+  </head>
+  
+<body>
+    <header>Worth A Shot</header>
+
+    <nav>Links go here dude</nav>
+    
+    <main>
+    <div class="submission"> <!--submission form start-->
+    <section>
+      <h2>Submit A Cocktail</h2>
+      <div>
+      <p>
+        Want to submit your own cocktail recipe to the site? Fill out the form below!
+
+      <div>
+        (Note that fields marked with <abbr title="Required" aria-label="Required">*</abbr> are required.)
+      </div>
+      </p>
+      <div>
+        <form id="submitform" onsubmit="formSend()">
+          <p>
+            <label for="firstName" >First Name<abbr title="Required" aria-label="Required">*</abbr></label>
+          </p>
+          <p>
+            <input type="text" id="firstName" required/>
+          </p>
+          <p>
+            <label for="lastName">Last Name</label>
+          </p>
+          <p>
+            <input type="text" id="lastName" />
+          </p>
+          <p>
+            <label for="drinkName">Drink Name</label>
+          </p>
+          <p>
+            <input type="text"  placeholder="Name of drink" id="submissionName" />
+          </p>
+          <p>
+            <label for="upload-image">Upload Image<abbr title="Required" aria-label="Required">*</abbr></label>
+          </p>
+          <p>
+            <input type="file" accept="image/*" id="upload-image" required />
+          </p>
+          <p>
+            <label for="ingredientsAndAmounts">Ingredients and Amounts<abbr title="Required" aria-label="Required">*</abbr></label>
+          </p>
+          <p>
+            <textarea id="ingredientsAndAmounts" rows="8" cols="40" placeholder="List all ingredients and amounts required (ex. 1oz Lemonade, 1 cup Ice cubes)" required></textarea>
+          </p>
+          <p>
+            <label for="steps">Instructions<abbr title="Required" aria-label="Required">*</abbr></label>
+          </p>
+          <p>
+            <textarea id="steps" rows="8" cols="40" placeholder="Add any instructions on how to mix the drink (ex. Shake well, strain into large glass)" required></textarea>
+          </p>
+          <p>
+            <input type="submit" value="Click to Submit" />
+          </p>
+        </form>
+      </div>
+      </div>
+      <!--submission form end-->
+    </main>
+    <footer>
+
+    </footer>
+    <script src="worthashot.js"></script>
+</body>
+</html>

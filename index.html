@@ -41,10 +41,16 @@
     </main>
 
     <aside>
-
       <form>
         <label for="measurement">Convert: </label>
-        <input id="input" type="number" size="15" min="0" placeholder="Input" onkeyup="converter()">
+        <input
+          id="input"
+          type="number"
+          size="15"
+          min="0"
+          placeholder="Input"
+          onkeyup="converter()"
+        />
         <select id="inputType">
           <option>Choose one</option>
           <option value="teaspoon">Teaspoon (tsp)</option>
@@ -54,34 +60,36 @@
           <option value="liter">Liter</option>
           <option value="centiliter">Centiliter (cl)</option>
           <option value="milliliter">Milliliter (ml)</option>
-        </select> 
-        
-        <label>To:</label>
-        <select id="outputType">
-            <option>Choose one</option>
-            <option value="teaspoon">Teaspoon (tsp)</option>
-            <option value="tablespoon">Tablespoon (Tbsp)</option>
-            <option value="ounces">US ounce (oz)</option>
-            <option value="cup">Cup</option>
-            <option value="liter">Liter</option>
-            <option value="centiliter">Centiliter (cl)</option>
-            <option value="milliliter">Milliliter (ml)</option>
         </select>
 
-        <br>
-        <input id="output" type="text" size="15" placeholder="Result" readonly>
+        <label>To:</label>
+        <select id="outputType">
+          <option>Choose one</option>
+          <option value="teaspoon">Teaspoon (tsp)</option>
+          <option value="tablespoon">Tablespoon (Tbsp)</option>
+          <option value="ounces">US ounce (oz)</option>
+          <option value="cup">Cup</option>
+          <option value="liter">Liter</option>
+          <option value="centiliter">Centiliter (cl)</option>
+          <option value="milliliter">Milliliter (ml)</option>
+        </select>
 
+        <br/>
+        <input
+          id="output"
+          type="text"
+          size="15"
+          placeholder="Result"
+          readonly/>
       </form>
 
       <p>
-        Info on what various terms mean (splash, dash, part, float, etc.)
-        give definitions/equivalent measurements or something idk
+        Info on what various terms mean (splash, dash, part, float, etc.) give
+        definitions/equivalent measurements or something idk
       </p>
     </aside>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
 
     <script src="worthashot.js"></script>
   </body>
