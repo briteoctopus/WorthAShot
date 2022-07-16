@@ -1,4 +1,100 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+} /*sets font size for webkit/microsoft browsers to 100%*/
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+} /*makes sure all browsers follow proper box model rules*/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid: "header" max-content
+        "nav   " max-content
+        "main  " min-content
+        "aside " min-content
+        "footer" min-content /
+        1fr; 
+}
+
+header {
+  grid-area: header;
+  background-color: aquamarine;
+}
+
+nav {
+  grid-area: nav;
+  background-color: blueviolet;
+}
+
+main {
+  grid-area: main;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: aquamarine;
+}
+
+#contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+aside {
+  grid-area: aside;
+  margin: 10px;
+  padding: 15px;
+  background-color: blueviolet;
+}
+
+footer {
+  grid-area: footer;
+  padding: 0.5em;
+  background-color: aquamarine;
+}
+
 ul {
   list-style: none;
-  /* float: left; */
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+#ingredientsList {
+  padding-left: 12px;
+}
+
+#drinkImage {
+  width: 25%;
+  margin: 10px;
+  border: 2px solid;
+}
+.conversion {
+  text-align: center;
+}
+
+#input {
+  margin: 8px;
+}
+
+#output {
+  margin: 10px;
+  padding: 4px;
+  
+}
+
+/*medium screen CSS*/
+@media screen and (min-width: 768px) {
+    
+}
+
+/*large screen CSS*/
+@media screen and (min-width: 1200px) {
+
 }

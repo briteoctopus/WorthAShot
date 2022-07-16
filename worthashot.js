@@ -18,7 +18,7 @@ function getRandomDrink() {
     .catch((error) => console.error("FETCH ERROR:", error));
 }
 
-//grabs drink information from API & displays in DOM
+//grabs drink information from API & displays it
 function displayDrink(data) {
   const drink = data.drinks[0];
   const drinkName = drink.strDrink;
@@ -48,7 +48,7 @@ function displayDrink(data) {
     document.getElementById("title").innerHTML = "Ingredients for " + drinkName;
   }
 
-  //gets measurements for ingredients and displays as UL
+  //gets amounts for ingredients and displays as UL
   const measurementList = Object.keys(drink)
     .filter(function (measurement) {
       return measurement.indexOf("strMeasure") == 0;
@@ -241,4 +241,18 @@ function converter() {
 }
 
 //function for saving form submission
-function formSend() {}
+
+function formSend(){
+  submitForm.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let response = await fetch(' ', {
+      method: 'POST',
+      body: new FormData(formElem)
+    });
+
+    let result = await response.json();
+
+    alert(result.message);
+  };
+}

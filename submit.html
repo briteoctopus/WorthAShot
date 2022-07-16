@@ -35,7 +35,7 @@
       </div>
       </p>
       <div>
-        <form id="submitform" onsubmit="formSend()">
+        <form id="submitForm" name="submissionForm" enctype="multipart/form-data" method="post" onsubmit="formSend()">
           <p>
             <label for="firstName" >First Name<abbr title="Required" aria-label="Required">*</abbr></label>
           </p>
@@ -58,7 +58,7 @@
             <label for="upload-image">Upload Image<abbr title="Required" aria-label="Required">*</abbr></label>
           </p>
           <p>
-            <input type="file" accept="image/*" id="upload-image" required />
+            <input type="file" accept="image/*" id="uploadedImage" required />
           </p>
           <p>
             <label for="ingredientsAndAmounts">Ingredients and Amounts<abbr title="Required" aria-label="Required">*</abbr></label>

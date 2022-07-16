@@ -23,25 +23,26 @@
     <nav>Links go here dude</nav>
 
     <main>
+      <div id="contentGrid">
       <div id="recipe">
         <h1 id="recipeName"><!--Drink name will show up here on click!--></h1>
         <img id="drinkImage" src="" />
-        <!--GET A MYSTERY ICON OR SOMETHING ???-->
+        <!--GET A MYSTERY ICON OR SOMETHING-->
         <br />
         <h2 id="title"></h2>
 
-        <!--set css so that these two uls are right next to each other? idk how else to do it-->
         <ul id="amounts"></ul>
 
         <ul id="ingredientsList"></ul>
 
         <p id="instructions"></p>
       </div>
+      </div>
       <button onclick="getRandomDrink()">Random Drink</button>
     </main>
 
     <aside>
-      <form>
+      <form class="conversion">
         <label for="measurement">Convert: </label>
         <input
           id="input"
