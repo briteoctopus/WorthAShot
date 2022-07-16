@@ -7,10 +7,14 @@
     <title>Home | Worth A Shot</title>
 
     <!--favicon start-->
-
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <!--favicon end-->
 
     <!--google fonts below here -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
 
     <!--stylesheets below here-->
     <link type="text/CSS" rel="stylesheet" href="normalize.css" />
@@ -20,7 +24,13 @@
 <body>
     <header>Worth A Shot</header>
 
-    <nav>Links go here dude</nav>
+    <nav>
+      <ul>
+        <a href="/index.html#recipe"><li>Random Drink</li></a>
+        <a href="/index.html#contentGrid"><li> Converter</li></a>
+        <a href="/submit.html"><li>Submit A Drink</li></a>
+      </ul>
+    </nav>
     
     <main>
     <div class="submission"> <!--submission form start-->
@@ -29,7 +39,6 @@
       <div>
       <p>
         Want to submit your own cocktail recipe to the site? Fill out the form below!
-
       <div>
         (Note that fields marked with <abbr title="Required" aria-label="Required">*</abbr> are required.)
       </div>
@@ -64,13 +73,13 @@
             <label for="ingredientsAndAmounts">Ingredients and Amounts<abbr title="Required" aria-label="Required">*</abbr></label>
           </p>
           <p>
-            <textarea id="ingredientsAndAmounts" rows="8" cols="40" placeholder="List all ingredients and amounts required (ex. 1oz Lemonade, 1 cup Ice cubes)" required></textarea>
+            <textarea id="ingredientsAndAmounts" rows="8" cols="35" placeholder="List all ingredients and amounts required (ex. 1oz Lemonade, 1 cup Ice cubes)" required></textarea>
           </p>
           <p>
             <label for="steps">Instructions<abbr title="Required" aria-label="Required">*</abbr></label>
           </p>
           <p>
-            <textarea id="steps" rows="8" cols="40" placeholder="Add any instructions on how to mix the drink (ex. Shake well, strain into large glass)" required></textarea>
+            <textarea id="steps" rows="8" cols="35" placeholder="Add any instructions on how to mix the drink (ex. Shake well, strain into large glass)" required></textarea>
           </p>
           <p>
             <input type="submit" value="Click to Submit" />

@@ -7,51 +7,67 @@
     <title>Home | Worth A Shot</title>
 
     <!--favicon start-->
-
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <!--favicon end-->
 
     <!--google fonts below here -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
 
     <!--stylesheets below here-->
     <link type="text/CSS" rel="stylesheet" href="normalize.css" />
     <link type="text/CSS" rel="stylesheet" href="worthashot.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
   </head>
 
   <body>
     <header>Worth A Shot</header>
 
-    <nav>Links go here dude</nav>
+    <nav>
+      <ul>
+        <a href="#recipe"><li>Random Drink</li></a>
+        <a href="#contentGrid"><li> Converter</li></a>
+        <a href="/submit.html"><li>Submit A Drink</li></a>
+      </ul>
+    </nav>
 
     <main>
-      <div id="contentGrid">
       <div id="recipe">
         <h1 id="recipeName"><!--Drink name will show up here on click!--></h1>
-        <img id="drinkImage" src="" />
-        <!--GET A MYSTERY ICON OR SOMETHING-->
-        <br />
+        <img id="drinkImage" src="images/mysterybox.png" />
+
         <h2 id="title"></h2>
 
         <ul id="amounts"></ul>
 
         <ul id="ingredientsList"></ul>
 
-        <p id="instructions"></p>
-      </div>
+        <p id="instructions">Click the button to get a random drink! Don't like that one? Keep pressing until you find one you'd like to try!</p>
       </div>
       <button onclick="getRandomDrink()">Random Drink</button>
     </main>
 
     <aside>
-      <form class="conversion">
-        <label for="measurement">Convert: </label>
-        <input
+      <div id="contentGrid">
+        <div class="convertform">
+        <section>
+          <h2>Unit Converter</h2>
+          <form class="conversion">
+        <!-- <label for="measurement">Convert: </label> -->
+          <input
           id="input"
           type="number"
           size="15"
           min="0"
           placeholder="Input"
-          onkeyup="converter()"
-        />
+          onkeyup="converter()"/>
+
+        <div id="inputOutput">
+        <!-- <label>From:</label> -->
         <select id="inputType">
           <option>Choose one</option>
           <option value="teaspoon">Teaspoon (tsp)</option>
@@ -62,8 +78,11 @@
           <option value="centiliter">Centiliter (cl)</option>
           <option value="milliliter">Milliliter (ml)</option>
         </select>
-
-        <label>To:</label>
+        <div>
+          <span class="material-icons" id="arrowDown">
+            arrow_downward</span>
+        </div>
+        <!-- <label>To:</label> -->
         <select id="outputType">
           <option>Choose one</option>
           <option value="teaspoon">Teaspoon (tsp)</option>
@@ -74,8 +93,8 @@
           <option value="centiliter">Centiliter (cl)</option>
           <option value="milliliter">Milliliter (ml)</option>
         </select>
+        </div>
 
-        <br/>
         <input
           id="output"
           type="text"
@@ -83,11 +102,28 @@
           placeholder="Result"
           readonly/>
       </form>
-
+    </section>
+    </div>
+    <div>
+      <section class="definitions">
       <p>
-        Info on what various terms mean (splash, dash, part, float, etc.) give
-        definitions/equivalent measurements or something idk
+        <h2>Other Measurements</h2>
+
+        <h3>Splash</h3>
+        A small amount generally used to add color or a hint of flavor to a drink.
+
+        <h3>Dash</h3>
+        Smaller than a splash. There is no formal measurement, but generally one shake of a bitter bottle, or 5-6 drops.
+
+        <h3>Float</h3>
+        A layer. It is a small amount that goes on top of ("floats on") the mixed drink.
+        
+        <h3>Part</h3>
+        A "part" can be any amount you want. It all depends on how big you want your drink to be. (Use the same amount for each part. Ex. 1 part is 1 cup, 2 parts is 2 cups, etc.)
       </p>
+    </section>
+  </div>
+  </div>
     </aside>
 
     <footer></footer>

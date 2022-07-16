@@ -21,10 +21,18 @@ body {
         "aside " min-content
         "footer" min-content /
         1fr; 
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;   
 }
 
 header {
   grid-area: header;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
   background-color: aquamarine;
 }
 
@@ -41,6 +49,22 @@ main {
   background-color: aquamarine;
 }
 
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
 #contentGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -50,6 +74,7 @@ aside {
   grid-area: aside;
   margin: 10px;
   padding: 15px;
+  text-align: center;
   background-color: blueviolet;
 }
 
@@ -71,22 +96,38 @@ ul {
 }
 
 #drinkImage {
-  width: 25%;
+  width: 50%;
   margin: 10px;
   border: 2px solid;
 }
-.conversion {
-  text-align: center;
-}
 
-#input {
+ #input {
   margin: 8px;
 }
 
 #output {
   margin: 10px;
   padding: 4px;
-  
+} 
+
+#inputOutput {
+  padding-top: 3px;
+}
+
+.convertform {
+  border: solid 1px;
+}
+
+.definitions {
+  text-align: left;
+}
+
+.material-icons {
+  vertical-align: bottom; /*Change this to adjust the >> icon*/
+}
+
+#arrowDown {
+  margin: 3px;
 }
 
 /*medium screen CSS*/
@@ -97,4 +138,64 @@ ul {
 /*large screen CSS*/
 @media screen and (min-width: 1200px) {
 
+  body {
+    display: grid;
+    grid: "header header" max-content
+          "nav    nav" max-content
+          "main   main" min-content
+          "aside  aside" min-content
+          "footer footer" min-content /
+          1fr; 
+  
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;   
+  }
+
+  header {
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+  }
+
+  #contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #drinkImage {
+    width: 30%;
+    margin: 10px;
+    border: 2px solid;
+  }
+  
+  #input {
+    margin: 8px;
+  }
+  
+  #output {
+    margin: 10px;
+    padding: 4px;
+  } 
+  
+  #inputOutput {
+    padding-top: 3px;
+  }
+
+  .convertform {
+    border: solid 1px;
+    margin: 20px;
+  }
+  
+  .material-icons {
+    vertical-align: bottom; /*Change this to adjust the >> icon*/
+  }
+
+  #submitForm > p {
+    margin: 12px;
+  }
 }
