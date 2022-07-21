@@ -15,7 +15,7 @@ html, body {
 
 body {
   display: grid;
-  grid: "header" max-content
+  grid: "header" 
         "nav   " max-content
         "main  " min-content
         "aside " min-content
@@ -24,6 +24,8 @@ body {
 
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;   
+  color: #EDF2F4;
+  background-color: #2b2d42;
 }
 
 header {
@@ -33,20 +35,17 @@ header {
   text-align: center;
   padding: 10px;
   margin: 5px;
-  background-color: aquamarine;
 }
 
 nav {
   grid-area: nav;
-  background-color: blueviolet;
+  background-color: #8D99AE;
 }
 
 main {
   grid-area: main;
   text-align: center;
   padding: 10px;
-  margin: 10px;
-  background-color: aquamarine;
 }
 
 h1 {
@@ -65,6 +64,11 @@ h3 {
   font-size: 18px;
 }
 
+#bigcontain {
+  background-image: url("images/pexels-kelly-2898205.jpg");
+  background-size: cover;
+}
+
 #contentGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -75,13 +79,14 @@ aside {
   margin: 10px;
   padding: 15px;
   text-align: center;
-  background-color: blueviolet;
+  border-radius: 20px;
+  background-color: rgba(43, 45, 66, 0.96);
 }
 
 footer {
   grid-area: footer;
   padding: 0.5em;
-  background-color: aquamarine;
+  background-color: #8D99AE;
 }
 
 ul {
@@ -89,6 +94,12 @@ ul {
   display: inline-block;
   vertical-align: top;
   text-align: left;
+}
+
+#recipe {
+  padding: 20px;
+  border-radius: 30px;
+  background-color: rgba(43, 45, 66, 0.96);
 }
 
 #ingredientsList {
@@ -99,6 +110,7 @@ ul {
   width: 50%;
   margin: 10px;
   border: 2px solid;
+  border-radius: 20px;
 }
 
  #input {
@@ -116,6 +128,8 @@ ul {
 
 .convertform {
   border: solid 1px;
+  padding-bottom: 10px;
+  border-radius: 30px;
 }
 
 .definitions {
@@ -161,6 +175,12 @@ ul {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
   }
+
+  #recipe, .submission {
+    background-color: rgba(43, 45, 66, 0.96);
+    margin: 20px 200px 20px 200px; 
+    padding: 20px;
+  }  
 
   #contentGrid {
     display: grid;

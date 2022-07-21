@@ -35,10 +35,12 @@
       </ul>
     </nav>
 
+    <div id="bigcontain">
     <main>
+      <div class="container">
       <div id="recipe">
         <h1 id="recipeName"><!--Drink name will show up here on click!--></h1>
-        <img id="drinkImage" src="images/mysterybox.png" />
+        <img id="drinkImage" src="images/idkwhite.png" />
 
         <h2 id="title"></h2>
 
@@ -46,9 +48,12 @@
 
         <ul id="ingredientsList"></ul>
 
-        <p id="instructions">Click the button to get a random drink! Don't like that one? Keep pressing until you find one you'd like to try!</p>
+        <p id="instructions">Not sure what you want to drink? Click the button to get a random drink! 
+          <br>
+          Don't like that one? Keep clicking until you find one you'd like to try!</p>
+        <button onclick="getRandomDrink()">Random Drink</button>
       </div>
-      <button onclick="getRandomDrink()">Random Drink</button>
+    </div>
     </main>
 
     <aside>
@@ -125,6 +130,7 @@
   </div>
   </div>
     </aside>
+    </div>
 
     <footer></footer>
 
