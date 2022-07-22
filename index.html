@@ -27,8 +27,10 @@
   <body>
     <header>Worth A Shot</header>
 
+    <!-- <span id="hamburger" class="material-icons hamburger"> menu </span> -->
+
     <nav>
-      <ul>
+      <ul class="nav">
         <a href="#recipe"><li>Random Drink</li></a>
         <a href="#contentGrid"><li> Converter</li></a>
         <a href="/submit.html"><li>Submit A Drink</li></a>
@@ -62,7 +64,6 @@
         <section>
           <h2>Unit Converter</h2>
           <form class="conversion">
-        <!-- <label for="measurement">Convert: </label> -->
           <input
           id="input"
           type="number"
@@ -72,7 +73,6 @@
           onkeyup="converter()"/>
 
         <div id="inputOutput">
-        <!-- <label>From:</label> -->
         <select id="inputType">
           <option>Choose one</option>
           <option value="teaspoon">Teaspoon (tsp)</option>
@@ -87,7 +87,6 @@
           <span class="material-icons" id="arrowDown">
             arrow_downward</span>
         </div>
-        <!-- <label>To:</label> -->
         <select id="outputType">
           <option>Choose one</option>
           <option value="teaspoon">Teaspoon (tsp)</option>

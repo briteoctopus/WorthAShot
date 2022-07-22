@@ -136,17 +136,13 @@ ul {
   text-align: left;
 }
 
-.material-icons {
+#arrowDown{
   vertical-align: bottom; /*Change this to adjust the >> icon*/
-}
-
-#arrowDown {
   margin: 3px;
 }
 
-/*medium screen CSS*/
-@media screen and (min-width: 768px) {
-    
+.submission {
+  border-radius: 20px;
 }
 
 /*large screen CSS*/
@@ -174,6 +170,10 @@ ul {
   h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
+  }
+
+  nav {
+    display: block;
   }
 
   #recipe, .submission {
@@ -211,7 +211,7 @@ ul {
     margin: 20px;
   }
   
-  .material-icons {
+  #arrowdown {
     vertical-align: bottom; /*Change this to adjust the >> icon*/
   }
 

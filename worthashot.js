@@ -1,3 +1,4 @@
+//drink grab code 
 const randomDrink = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 
 function getRandomDrink() {
@@ -238,21 +239,4 @@ function converter() {
   ) {
     output.value = Number(input.value) / 10;
   }
-}
-
-//function for saving form submission
-
-function formSend(){
-  submitForm.onsubmit = async (e) => {
-    e.preventDefault();
-
-    let response = await fetch(' ', {
-      method: 'POST',
-      body: new FormData(formElem)
-    });
-
-    let result = await response.json();
-
-    alert(result.message);
-  };
 }
