@@ -31,15 +31,17 @@ body {
 header {
   grid-area: header;
   font-family: 'Raleway', sans-serif;
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
+  padding-right: 20px;
   margin: 5px;
 }
 
 nav {
   grid-area: nav;
   background-color: #8D99AE;
+  text-align: center;
 }
 
 main {
@@ -96,7 +98,7 @@ ul {
   text-align: left;
 }
 
-#recipe {
+#recipe, .submission {
   padding: 20px;
   border-radius: 30px;
   background-color: rgba(43, 45, 66, 0.96);
@@ -145,12 +147,56 @@ ul {
   border-radius: 20px;
 }
 
+/*navigation stuff*/
+
+ .top-nav {
+  padding: .5em;
+  overflow: hidden;
+  position: relative;
+}
+
+.top-nav a {
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  color: #EDF2F4;
+  padding: 8px;
+  margin: 7px 0 7px 0;
+} 
+
+.top-nav a:hover{
+  background-color: #303030;
+  color: white;
+}
+
+#nav-list {
+  padding-left: 0;
+  width: 100%;
+  text-align: center;
+} 
+
+.invis {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  position: absolute;
+  left: 88%;
+  top: 2%;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+
+
 /*large screen CSS*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
 
   body {
     display: grid;
-    grid: "header header" max-content
+    grid: "header header" min-content
           "nav    nav" max-content
           "main   main" min-content
           "aside  aside" min-content
@@ -162,18 +208,18 @@ ul {
   }
 
   header {
-    text-align: left;
+    /* text-align: left; */
     padding: 20px;
     margin: 10px;
+  }
+
+  nav {
+    border: #8D99AE 1px solid;
   }
 
   h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
-  }
-
-  nav {
-    display: block;
   }
 
   #recipe, .submission {
@@ -218,4 +264,42 @@ ul {
   #submitForm > p {
     margin: 12px;
   }
+
+/*nav stuff */
+
+#hamburger {
+  display: none;
+}
+
+.top-nav {
+  display: contents;
+  padding: .5em;
+}
+
+.top-nav a {
+  display: inline;
+} 
+
+ul#nav-list > li {
+  display: inline;
+  border-right: #EDF2F4 1px dotted;
+}
+
+ul#nav-list > li:last-child {
+  border-right: none;
+}
+
+ul > li > a {
+  color: #EDF2F4;
+  padding-top: 20px;
+  margin: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul > li > a:hover {
+  background-color: #2b2d42;
+  text-decoration: underline;
+}
+
 }

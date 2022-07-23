@@ -23,3 +23,13 @@ document.querySelector("#uploadedImage").addEventListener("change", function(){
     reader.readAsDataURL(this.files[0]);
   });
 });  */
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+const button = document.getElementById('hamburger');
+
+button.addEventListener('click', function(){
+    const menu = document.getElementById('navlinks');
+    if (navlinks.classList.contains('invis')){
+        navlinks.classList.remove('invis');}
+        else {navlinks.classList.add('invis');}
+    })

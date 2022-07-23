@@ -19,18 +19,23 @@
     <!--stylesheets below here-->
     <link type="text/CSS" rel="stylesheet" href="normalize.css" />
     <link type="text/CSS" rel="stylesheet" href="worthashot.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   
 <body>
   <header>Worth A Shot</header>
 
-    <nav>
-      <ul>
-        <a href="/index.html#recipe"><li>Random Drink</li></a>
-        <a href="/index.html#contentGrid"><li> Converter</li></a>
-        <a href="/submit.html"><li>Submit A Drink</li></a>
-      </ul>
-    </nav>
+  <span id="hamburger" class="material-icons hamburger"> menu </span>
+  <nav>
+    <div class="top-nav invis" id="navlinks">
+    <ul class="nav" id="nav-list">
+      <li><a href="/index.html#recipe">Random Drink</a></li>
+      <li><a href="/index.html#contentGrid">Converter</a></li>
+      <li><a href="/submit.html">Submit A Drink</a></li>
+    </ul>
+    </div>
+  </nav>
     
     <div id="bigcontain">
     <main>
@@ -70,19 +75,19 @@
           </p>
           <p>
             <!-- <input type="file" accept="image/*" id="uploadedImage" required /> For image file upload; replaced with URL input-->
-            <input type="text" accept="URL" id="imageURL" required />
+            <input type="text" accept="URL" id="imageURL" placeholder="https://example.com/image.png" required />
           </p>
           <p>
             <label for="ingredientsAndAmounts">Ingredients and Amounts<abbr title="Required" aria-label="Required">*</abbr></label>
           </p>
           <p>
-            <textarea id="ingredientsAndAmounts" rows="8" cols="35" placeholder="List all ingredients and amounts required (ex. 1oz Lemonade, 1 cup Ice cubes)" required></textarea>
+            <textarea id="ingredientsAndAmounts" rows="8" cols="30" placeholder="List all ingredients and amounts required (ex. 1oz Lemonade, 1 cup Ice cubes)" required></textarea>
           </p>
           <p>
             <label for="steps">Instructions<abbr title="Required" aria-label="Required">*</abbr></label>
           </p>
           <p>
-            <textarea id="steps" rows="8" cols="35" placeholder="Add any instructions on how to mix the drink (ex. Shake well, strain into large glass)" required></textarea>
+            <textarea id="steps" rows="8" cols="30" placeholder="Add any instructions on how to mix the drink (ex. Shake well, strain into large glass)" required></textarea>
           </p>
           <p>
             <input type="submit" value="Click to Submit" />
