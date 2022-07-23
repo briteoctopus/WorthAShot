@@ -66,6 +66,11 @@ h3 {
   font-size: 18px;
 }
 
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+
 #bigcontain {
   background-image: url("images/pexels-kelly-2898205.jpg");
   background-size: cover;
